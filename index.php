@@ -5,23 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- Metadados de SEO -->
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+
+  <!-- SEO Básico -->
+  <title>App Help Desk - Central de Suporte Técnico Especializado</title>
+  <meta name="description" content="Sistema especializado em gerenciamento de chamados técnicos. Registre, acompanhe e resolva incidentes de forma eficiente.">
+  <meta name="keywords" content="help desk, suporte técnico, gerenciamento de chamados, suporte online, TI, assistência remota">
   <meta name="author" content="Danilo Antunes">
-  <!-- Framework -->
-  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <!-- Folhas de estilo -->
-  <link rel="stylesheet" href="./src/assets/css/style.css">
-  <!-- Favicon e Apple Touch Icons -->
+
+  <!-- Controle de indexação -->
+  <meta name="robots" content="index, follow">
+
+  <!-- Web Manifest e Configurações PWA -->
+  <link rel="manifest" href="./public/favicons/site.webmanifest">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="./public/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./public/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./public/favicons/favicon-16x16.png">
-  <link rel="manifest" href="./public/favicons/site.webmanifest">
-  <!-- Título otimizado -->
-  <title>App Help Desk - Sua Central de Ajuda</title>
+
+ <!-- Pré-carregamento de recursos críticos -->
+  <link rel="preload" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" as="style">
+  
+  <!-- Framework CSS -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+  <!-- Folha de estilo principal -->
+  <link rel="stylesheet" href="./src/assets/css/style.css">
 </head>
 <body>
-  
+
 </body>
 </html>
