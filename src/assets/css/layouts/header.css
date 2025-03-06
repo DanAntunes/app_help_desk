@@ -1,26 +1,59 @@
+/* Adicione isto no início do seu CSS para melhor consistência entre browsers */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Padroniza o cálculo de dimensões */
+  margin: 0;
+  padding: 0;
+}
+
 header {
   background-color: var(--bg-header);
 }
 
 .navbar {
-  padding-left: 1rem; 
+  padding-left: 1rem;
   padding-right: 1rem;
+  overflow: auto;
 }
 
 .navbar-brand {
-  margin-left: 0.5rem; 
+  margin-left: 0.5rem;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 .navbar-nav {
-  margin-right: 0.5rem; 
+  margin-right: 0.5rem;
 }
 
 .logo {
   width: 30px;
   height: 30px;
+  /* Prevenção de bugs em browsers antigos */
+  display: block;
+  border: 0;
+  /* Melhora a renderização no IE */
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
 }
 
 .title {
   font-family: var(--font-primary);
+  /* Garante consistência de peso em diferentes browsers */
   font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Previne ajuste automático de tamanho em Mobile */
+  text-rendering: optimizeLegibility;
+}
+
+/* Media Query para IE10/11 */
+/* biome-ignore lint/correctness/noUnknownMediaFeatureName: <explanation> */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .navbar {
+    display: block;
+  }
 }
