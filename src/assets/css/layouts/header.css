@@ -1,9 +1,26 @@
 header {
-  background-color: var(--bg-header) ;
+  background-color: var(--bg-header);
+}
+
+.navbar {
+  padding-left: 1rem; 
+  padding-right: 1rem;
+}
+
+.navbar-brand {
+  margin-left: 0.5rem; 
+}
+
+.navbar-nav {
+  margin-right: 0.5rem; 
 }
 
 .logo {
   width: 30px;
   height: 30px;
-  margin-left: 1rem;
+}
+
+.title {
+  font-family: var(--font-primary);
+  font-weight: 600;
 }
