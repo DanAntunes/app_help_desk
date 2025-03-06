@@ -28,5 +28,6 @@ main {
 
 .card-login {
   width: 350px;
-  margin: 0 auto;
+  margin: 4rem auto;
+  font-family: var(--font-primary);
 }
