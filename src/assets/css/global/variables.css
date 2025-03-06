@@ -1,4 +1,15 @@
 :root {
+  --primary-color: #fff;
+  --bg-modal-color: #191919;
+  --bg-color: #121212;
+  --bg-container: #1e1e1e;
+  --bg-header: #292929;
+  --bg-btn: #333;
+  --darkness-color: #111111;
+  --hover-color: #555;
+  --border-color: #444;
+  --text-color: #f1f1f1;
+
   --font-primary: 'IBM Plex Sans', sans-serif;
   --font-secondary: 'Roboto', sans-serif;
 }
