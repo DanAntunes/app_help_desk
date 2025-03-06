@@ -1,6 +1,7 @@
 footer {
   padding: 0;
   width: 100%;
+  background-color: var(--bg-footer);
 }
 
 footer p {
@@ -8,4 +9,5 @@ footer p {
   text-align: center;
   padding: 1rem;
   margin: 0;
+  color: var(--text-color);
 }
