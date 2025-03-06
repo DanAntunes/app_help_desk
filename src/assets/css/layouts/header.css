@@ -1,4 +1,9 @@
+header {
+  background-color: var(--bg-header) ;
+}
+
 .logo {
   width: 30px;
   height: 30px;
+  margin-left: 1rem;
 }
