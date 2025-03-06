@@ -34,6 +34,25 @@
   <link rel="stylesheet" href="../../../src/assets/css/style.css">
 </head>
 <body>
+ <!-- Cabeçalho com navegação -->
+ <header>
+  <nav class="navbar navbar-dark">
+    <a class="navbar-brand" href="#">
+      <div class="mb-0">
+        <img src="../../../src/assets/images/logo.png" alt="Logo App Help Desk" class="d-inline-block align-top logo">
+        <span class="title">App Help Desk</span>
+      </div>
+    </a>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            SAIR
+          </a>
+        </li>
+      </ul>
+  </nav>
+ </header>
+
 
 </body>
 </html>
