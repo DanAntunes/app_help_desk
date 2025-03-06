@@ -45,6 +45,43 @@
     </a>
   </nav>
  </header>
+<!-- Conteúdo principal -->
+<main class="container my-5">
+  <section aria-labelledby="login-title">
+    <article class="card card-login">
+      <header class="card-header">
+        <h2 id="login-title" class="mb-0 text-center text-uppercase">Login</h2>
+      </header>
+      <div class="card-body">
+        <form action="http://localhost/projects/app_help_desk/src/assets/scripts/valida_login.php" method="post">
+          <div class="mb-3">
+            <label for="email" class="visually-hidden">E-mail</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="E-mail" required>
+          </div>
+          <div class="mb-3">
+            <label for="senha" class="visually-hidden">Senha</label>
+            <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" required>
+          </div>
+          <?php if (isset($_GET['login']) && $_GET['login'] == 'erro') { ?> 
+            <div class="text-danger mb-3">
+              Usuário ou senha inválido(s)
+            </div>
+          <?php } ?>
+
+          <?php if (isset($_GET['login']) && $_GET['login'] == 'erro2') { ?>
+            <div class="text-danger mb-3">
+              Faça Login antes de acessar as páginas protegidas.
+            </div>
+          <?php } ?>
+
+          <div class="d-grid">
+            <button type="submit" class="btn btn-lg btn-info">Entrar</button>
+          </div>
+        </form>
+      </div>
+    </article>
+  </section>
+</main>
 
 </body>
 </html>
