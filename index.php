@@ -34,6 +34,17 @@
   <link rel="stylesheet" href="./src/assets/css/style.css">
 </head>
 <body>
+ <!-- Cabeçalho com navegação -->
+ <header>
+  <nav class="navbar navbar-dark">
+    <a class="navbar-brand" href="#">
+      <div class="mb-0">
+        <img src="./src/assets/images/logo.png" alt="Logo App Help Desk" class="d-inline-block align-top logo">
+        <span>App Help Desk</span>
+      </div>
+    </a>
+  </nav>
+ </header>
 
 </body>
 </html>
