@@ -82,6 +82,9 @@
     </article>
   </section>
 </main>
-
+<!-- Rodapé -->
+<footer class="text-center py-3">
+  <small>&copy; 2025 App Help Desk. Todos os direitos reservados.</small>
+</footer>
 </body>
 </html>
