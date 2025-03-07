@@ -8,7 +8,7 @@
   $profiles = [1 => 'Admin' , 2 => 'User' ];
 
   //usuarios do sistema
-  $usuarios_app = array(
+  $user_app = array(
     array('id' => 1 , 'email' => 'adm@teste.com.br', 'password' => '1234' , 'profile_id' => 1),
     array('id' => 2 , 'email' => 'user@teste.com.br', 'password' => '1234' , 'profile_id' => 1),
     array('id' => 3 , 'email' => 'dan@teste.com.br', 'password' => '1234' , 'profile_id' => 2),
@@ -27,11 +27,11 @@
     $_SESSION['authenticated'] = 'YES';
     $_SESSION['id'] = $usuario_id;
     $_SESSION['profile_id'] = $user_profile_id;
-    header('Location:');
+    header('Location: ../../../src/assets/pages/home.php');
     exit;
   } else {
     $_SESSION['authenticated'] = 'NO';
-    header('Location:');
+    header('Location: ../../../index.php?login=error');
     exit;
   }
 
