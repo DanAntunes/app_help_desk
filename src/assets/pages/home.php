@@ -1,3 +1,7 @@
+<?php 
+require_once __DIR__ . '/../scripts/validador_acesso.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -45,7 +49,7 @@
     </a>
     <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="../scripts/logoff.php">
             SAIR
           </a>
         </li>
