@@ -53,7 +53,7 @@
         <h2 id="login-title" class="mb-0 text-center text-uppercase">Login</h2>
       </header>
       <div class="card-body">
-        <form action="http://localhost/projects/app_help_desk/src/assets/scripts/valida_login.php" method="post">
+        <form action="http://localhost/projects/app_help_desk/src/assets/scripts/validate_login.php" method="post">
           <div class="mb-3">
             <label for="email" class="visually-hidden">E-mail</label>
             <input type="email" id="email" name="email" class="form-control" placeholder="E-mail" required>
