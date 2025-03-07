@@ -52,6 +52,38 @@
       </ul>
   </nav>
  </header>
+<!-- Conteúdo principal -->
+<main class="container my-5">
+  <section aria-labelledby="menu-title">
+    <article class="card card-chamado">
+      <header class="card-header">
+        <h2 id="menu-title" class="mb-0">Menu</h2>
+      </header>
+      <div class="card-body">
+        <div class="row g-3">
+          <div class="col-6 d-flex justify-content-center align-items-center">
+            <a href="abrir_chamado.php" class="text-decoration-none" title="Abrir Chamado">
+              <img src="../images/formulario_abrir_chamado.png" 
+                   class="img-fluid transition-scale" 
+                   width="70" 
+                   height="70" 
+                   alt="Formulário para abrir chamado">
+            </a>
+          </div>
+          <div class="col-6 d-flex justify-content-center align-items-center">
+            <a href="consultar_chamado.php" class="text-decoration-none" title="Consultar Chamado">
+              <img src="../images/formulario_consultar_chamado.png" 
+                   class="img-fluid transition-scale" 
+                   width="70" 
+                   height="70" 
+                   alt="Formulário para consultar chamado">
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+</main>
 
 </body>
 </html>
