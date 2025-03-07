@@ -64,18 +64,14 @@
           <div class="col-6 d-flex justify-content-center align-items-center">
             <a href="abrir_chamado.php" class="text-decoration-none" title="Abrir Chamado">
               <img src="../images/formulario_abrir_chamado.png" 
-                   class="img-fluid transition-scale" 
-                   width="70" 
-                   height="70" 
+                   class="img-fluid img-form transition-scale" 
                    alt="Formulário para abrir chamado">
             </a>
           </div>
           <div class="col-6 d-flex justify-content-center align-items-center">
             <a href="consultar_chamado.php" class="text-decoration-none" title="Consultar Chamado">
               <img src="../images/formulario_consultar_chamado.png" 
-                   class="img-fluid transition-scale" 
-                   width="70" 
-                   height="70" 
+                   class="img-fluid img-form transition-scale" 
                    alt="Formulário para consultar chamado">
             </a>
           </div>
