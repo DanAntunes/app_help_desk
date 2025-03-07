@@ -1,5 +1,5 @@
 <?php 
-require_once __DIR__ . '/../scripts/validador_acesso.php';
+require_once __DIR__ . '/../scripts/access_validator.php';
 ?>
 
 <!DOCTYPE html>
