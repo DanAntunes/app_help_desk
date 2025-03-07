@@ -2,6 +2,7 @@
 @import url(./reset.css);
 @import url(./scrollbar.css);
 @import url(./variables.css);
+@import url(../pages/chamado.css);
 
 
 html, body {
