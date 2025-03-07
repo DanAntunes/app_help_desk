@@ -59,16 +59,16 @@
             <input type="email" id="email" name="email" class="form-control" placeholder="E-mail" required>
           </div>
           <div class="mb-3">
-            <label for="senha" class="visually-hidden">Senha</label>
-            <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" required>
+            <label for="password" class="visually-hidden">Senha</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Senha" required>
           </div>
-          <?php if (isset($_GET['login']) && $_GET['login'] == 'erro') { ?> 
+          <?php if (isset($_GET['login']) && $_GET['login'] == 'error') { ?> 
             <div class="text-danger mb-3">
               Usuário ou senha inválido(s)
             </div>
           <?php } ?>
 
-          <?php if (isset($_GET['login']) && $_GET['login'] == 'erro2') { ?>
+          <?php if (isset($_GET['login']) && $_GET['login'] == 'errorSecond') { ?>
             <div class="text-danger mb-3">
               Faça Login antes de acessar as páginas protegidas.
             </div>
