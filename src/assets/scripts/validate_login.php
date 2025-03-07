@@ -25,7 +25,7 @@
 
   if($authenticated_user) {
     $_SESSION['authenticated'] = 'YES';
-    $_SESSION['id'] = $usuario_id;
+    $_SESSION['id'] = $user_id;
     $_SESSION['profile_id'] = $user_profile_id;
     header('Location: ../../../src/assets/pages/home.php');
     exit;
