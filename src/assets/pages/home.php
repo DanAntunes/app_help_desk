@@ -57,7 +57,7 @@
   <section aria-labelledby="menu-title">
     <article class="card card-chamado">
       <header class="card-header">
-        <h2 id="menu-title" class="mb-0">Menu</h2>
+        <h2 id="menu-title" class="mb-0 text-center">Menu</h2>
       </header>
       <div class="card-body">
         <div class="row g-3">
