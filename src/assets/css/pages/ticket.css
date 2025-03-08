@@ -5,6 +5,14 @@
   filter: drop-shadow(0 0 10px var(--border-color));
 }
 
+.card-ticket {
+  width: 60%;
+  margin: 0 auto;
+  font-family: var(--font-second);
+  filter: drop-shadow(0 0 10px var(--border-color));
+}
+
+
 .img-form {
   width: 70px;
   height: 70px;
