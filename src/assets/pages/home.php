@@ -66,14 +66,14 @@ require_once __DIR__ . '/../scripts/access_validator.php';
       <div class="card-body">
         <div class="row g-3">
           <div class="col-6 d-flex justify-content-center align-items-center">
-            <a href="abrir_chamado.php" class="text-decoration-none" title="Abrir Chamado">
+            <a href="create_ticket.php" class="text-decoration-none" title="Abrir Chamado">
               <img src="../images/formulario_abrir_chamado.png" 
                    class="img-fluid img-form transition-scale" 
                    alt="Formulário para abrir chamado">
             </a>
           </div>
           <div class="col-6 d-flex justify-content-center align-items-center">
-            <a href="consultar_chamado.php" class="text-decoration-none" title="Consultar Chamado">
+            <a href="view_tickets.php" class="text-decoration-none" title="Consultar Chamado">
               <img src="../images/formulario_consultar_chamado.png" 
                    class="img-fluid img-form transition-scale" 
                    alt="Formulário para consultar chamado">
