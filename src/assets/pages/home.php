@@ -59,7 +59,7 @@ require_once __DIR__ . '/../scripts/access_validator.php';
 <!-- Conteúdo principal -->
 <main class="container my-5">
   <section aria-labelledby="menu-title">
-    <article class="card card-chamado">
+    <article class="card card-menu">
       <header class="card-header">
         <h2 id="menu-title" class="mb-0 text-center">Menu</h2>
       </header>
