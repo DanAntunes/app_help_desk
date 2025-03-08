@@ -64,15 +64,15 @@ require_once __DIR__ . '/../scripts/access_validator.php';
         <h2 id="chamado-title" class="mb-0 text-center text-uppercase h4">Abrir Ticket</h2> <!-- Adicionado h4 para hierarquia -->
       </header>
       <div class="card-body">
-        <form action="" method="post" novalidate>
+        <form action="../scripts/create_ticket_processor.php" method="post" novalidate>
           <div class="mb-3">
-            <label for="titulo" class="form-label">Título</label>
-            <input type="text" id="titulo" name="titulo" class="form-control" placeholder="Título" required>
+            <label for="title" class="form-label">Título</label>
+            <input type="text" id="title" name="title" class="form-control" placeholder="Título" required>
           </div>
 
           <div class="mb-3">
-            <label for="categoria" class="form-label">Categoria</label>
-            <select id="categoria" name="categoria" class="form-select" required>
+            <label for="category" class="form-label">Categoria</label>
+            <select id="category" name="category" class="form-select" required>
               <option value="">Selecione</option>
               <option value="criacao-usuario">Criação Usuário</option>
               <option value="impressora">Impressora</option>
