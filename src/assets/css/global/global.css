@@ -1,10 +1,3 @@
-@import url(./fonts.css);
-@import url(./reset.css);
-@import url(./scrollbar.css);
-@import url(./variables.css);
-@import url(../pages/ticket.css);
-
-
 html, body {
   height: 100%;
   margin: 0;
@@ -28,9 +21,3 @@ main {
   flex: 1 1 0;
 }
 
-.card-login {
-  width: 350px;
-  margin: 4rem auto;
-  font-family: var(--font-primary);
-  filter: drop-shadow(0 0 10px var(--border-color));
-}
