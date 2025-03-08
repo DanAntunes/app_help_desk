@@ -56,50 +56,54 @@ require_once __DIR__ . '/../scripts/access_validator.php';
       </ul>
   </nav>
  </header>
-  <!-- Conteúdo principal -->
-  <main class="container my-5">
-    <section aria-labelledby="consulta-chamado-title">
-      <article class="card">
-        <header class="card-header">
-          <h2 id="consulta-chamado-title" class="mb-0">Consulta de chamado</h2>
-        </header>
-        <div class="card-body">
-        <?php foreach($chamados as $chamado) { ?>
-              
-              <?php
-
-                $chamado_dados = explode('#', $chamado);
-
-                //não existe detalhes do chamado se ele não estiver completo
-                if(count($chamado_dados) < 3) {
-                  continue;
-                }
-
-              ?>
-          <div class="row">
-            <div class="col">
-              <!-- Card de chamado individual -->
-              <article class="card mb-3 bg-light">
-                <div class="card-body">
-                  <h3 class="card-title"><?=$chamado_dados[1]?></h3>
-                  <h4 class="card-subtitle mb-2 text-muted"><?=$chamado_dados[2]?></h4>
-                  <p class="card-text"><?=$chamado_dados[3]?></p>
-                </div>
-              </article>
-            </div>
+<!-- Conteúdo principal -->
+<main class="container my-5">
+  <section aria-labelledby="view-ticket-title">
+    <article class="card shadow-sm"> <!-- Adicionado shadow -->
+      <header class="card-header bg-primary bg-opacity-10"> <!-- Estilo moderno -->
+        <h2 id="view-ticket-title" class="mb-0 h4">Consultar Tickets</h2> <!-- Hierarquia de heading adequada -->
+      </header>
+      <div class="card-body">
+        <?php if(empty($tickets)): ?> <!-- Controle para lista vazia -->
+          <div class="alert alert-info mb-4">
+            Nenhum ticket encontrado
           </div>
-
-          <?php } ?>
-          <!-- Botão de voltar -->
-          <div class="row mt-5">
-            <div class="col-6">
-            <a class="btn btn-lg btn-warning btn-block" href="home.php">Voltar</a>
+        <?php else: ?>
+          <?php foreach($tickets as $ticket): ?>
+            <?php
+              $ticket_data = explode('#', $ticket);
+              if(count($ticket_data) < 4) continue;
+            ?>
+            <div class="row g-2 mb-3">
+              <div class="col-12">
+                <!-- Card de chamado individual -->
+                <article class="card border-primary border-opacity-25">
+                  <div class="card-body">
+                    <h3 class="card-title fs-5 mb-1"><?=htmlspecialchars($ticket_data[1])?></h3>
+                    <h4 class="card-subtitle fs-6 text-body-secondary mb-2">
+                      <?=htmlspecialchars($ticket_data[2])?>
+                    </h4>
+                    <p class="card-text text-muted lh-sm">
+                      <?=htmlspecialchars($ticket_data[3])?>
+                    </p>
+                  </div>
+                </article>
+              </div>
             </div>
+          <?php endforeach; ?>
+        <?php endif; ?>
+
+        <div class="row mt-4 g-3"> <!-- Atualizado espaçamento -->
+          <div class="col-12 col-md-6"> <!-- Responsividade -->
+            <a href="home.php" class="btn btn-outline-secondary w-100 py-2"> <!-- Estilo moderno -->
+              <i class="bi bi-arrow-left me-2"></i>Voltar
+            </a>
           </div>
         </div>
-      </article>
-    </section>
-  </main>
+      </div>
+    </article>
+  </section>
+</main>
 
  <!-- Rodapé -->
 <footer class="text-center py-3">
