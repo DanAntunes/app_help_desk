@@ -15,5 +15,3 @@
  header('Location: ../../../src/assets/pages/create_ticket.php');
 
 ?>
-
-<a href="../../assets/data-base/"></a>
