@@ -56,8 +56,55 @@ require_once __DIR__ . '/../scripts/access_validator.php';
       </ul>
   </nav>
  </header>
+<!-- Conteúdo principal -->
+<main class="container my-4">
+  <section aria-labelledby="chamado-title">
+    <article class="card card-ticket">
+      <header class="card-header">
+        <h2 id="chamado-title" class="mb-0 text-center text-uppercase h4">Abrir Ticket</h2> <!-- Adicionado h4 para hierarquia -->
+      </header>
+      <div class="card-body">
+        <form action="" method="post" novalidate>
+          <div class="mb-3">
+            <label for="titulo" class="form-label">Título</label>
+            <input type="text" id="titulo" name="titulo" class="form-control" placeholder="Título" required>
+          </div>
 
+          <div class="mb-3">
+            <label for="categoria" class="form-label">Categoria</label>
+            <select id="categoria" name="categoria" class="form-select" required>
+              <option value="">Selecione</option>
+              <option value="criacao-usuario">Criação Usuário</option>
+              <option value="impressora">Impressora</option>
+              <option value="hardware">Hardware</option>
+              <option value="software">Software</option>
+              <option value="rede">Rede</option>
+            </select>
+          </div>
 
+          <div class="mb-4"> 
+            <label for="descricao" class="form-label">Descrição</label>
+            <textarea id="descricao" name="descricao" class="form-control" 
+                      rows="4" placeholder="Descreva o problema" required></textarea> <!-- Aumentado rows -->
+          </div>
+
+          <div class="row mt-4 g-3">
+            <div class="col-md-6">
+              <a class="btn btn-outline-warning w-100 py-2" href="home.php"> <!-- Atualizado classes -->
+                <i class="bi bi-arrow-left me-2"></i>Voltar <!-- Adicionado ícone -->
+              </a>
+            </div>
+            <div class="col-md-6">
+              <button class="btn btn-primary w-100 py-2" type="submit"> <!-- Atualizado classes -->
+                <i class="bi bi-plus-circle me-2"></i>Abrir <!-- Adicionado ícone -->
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </article>
+  </section>
+</main>
  <!-- Rodapé -->
 <footer class="text-center py-3">
   <small>&copy; 2025 App Help Desk. Todos os direitos reservados.</small>
