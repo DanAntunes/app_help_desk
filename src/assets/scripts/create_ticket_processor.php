@@ -9,9 +9,9 @@
 
  $text = $_SESSION['id'] . '#' . $title . '#' . $category . '#' . $description . PHP_EOL;
 
- $arquivo = fopen('../../assets/data-base/tickets.dat', 'a');
- fwrite($arquivo, $text);
- fclose($arquivo);
+ $file = fopen('../../assets/data-base/tickets.dat', 'a');
+ fwrite($file, $text);
+ fclose($file);
  header('Location: ../../../src/assets/pages/create_ticket.php');
 
 ?>
