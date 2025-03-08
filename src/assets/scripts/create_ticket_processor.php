@@ -3,20 +3,17 @@
  session_start();
 
  $title = str_replace('#', '-', $_POST['title']);
- $categoria = str_replace('#', '-', $_POST['categoria']);
- $descricao = str_replace('#', '-', $_POST['descricao']);
+ $category = str_replace('#', '-', $_POST['category']);
+ $description = str_replace('#', '-', $_POST['description']);
+ 
 
- //implode('#', $_POST);
+ $text = $_SESSION['id'] . '#' . $title . '#' . $category . '#' . $description . PHP_EOL;
 
- $text = $_SESSION['id'] . '#' . $titulo . '#' . $categoria . '#' . $descricao . PHP_EOL;
-
- //abrindo o arquivo
- $arquivo = fopen('../../../../../app_help_desk/arquivo.hd', 'a');
-  //escrevendo o texto
+ $arquivo = fopen('../../assets/data-base/tickets.dat', 'a');
  fwrite($arquivo, $text);
-  //fechando o arquivo
  fclose($arquivo);
- //echo $text;
- header('Location: /phpstudy/app_help_desk/abrir_chamado.php');
+ header('Location: ../../../src/assets/pages/create_ticket.php');
 
 ?>
+
+<a href="../../assets/data-base/"></a>
