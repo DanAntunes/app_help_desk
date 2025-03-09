@@ -1,8 +1,8 @@
 .card-menu {
-  width: 80%;
+  width: 50%;
   margin: 6rem auto;
   font-family: var(--font-primary);
-  filter: drop-shadow(0 0 10px var(--border-color));
+  filter: drop-shadow(0 0 10px var(--shadow-color));
 }
 
 .img-form {
