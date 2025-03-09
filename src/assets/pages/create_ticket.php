@@ -83,8 +83,8 @@ require_once __DIR__ . '/../scripts/access_validator.php';
           </div>
 
           <div class="mb-4"> 
-            <label for="descricao" class="form-label">Descrição</label>
-            <textarea id="descricao" name="descricao" class="form-control" 
+            <label for="description" class="form-label">Descrição</label>
+            <textarea id="description" name="description" class="form-control" 
                       rows="4" placeholder="Descreva o problema" required></textarea> <!-- Aumentado rows -->
           </div>
 
