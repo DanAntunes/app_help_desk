@@ -1,0 +1,6 @@
+.card-view-ticket {
+  width: 60%;
+  margin: 0 auto;
+  font-family: var(--font-second);
+  filter: drop-shadow(0 0 10px var(--border-color));
+}
