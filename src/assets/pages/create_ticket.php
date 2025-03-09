@@ -61,7 +61,7 @@ require_once __DIR__ . '/../scripts/access_validator.php';
   <section aria-labelledby="chamado-title">
     <article class="card card-ticket">
       <header class="card-header">
-        <h2 id="chamado-title" class="mb-0 text-center text-uppercase h4">Abrir Ticket</h2> <!-- Adicionado h4 para hierarquia -->
+        <h2 id="chamado-title" class="mb-0 text-center fw-bold text-uppercase h4">Abrir Ticket</h2> <!-- Adicionado h4 para hierarquia -->
       </header>
       <div class="card-body">
         <form action="../scripts/create_ticket_processor.php" method="post" novalidate>
