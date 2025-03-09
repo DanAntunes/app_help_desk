@@ -90,12 +90,12 @@ require_once __DIR__ . '/../scripts/access_validator.php';
 <!-- Conteúdo principal -->
 <main class="container my-5">
   <section aria-labelledby="view-ticket-title">
-    <article class="card shadow-sm card-view-ticket"> <!-- Adicionado shadow -->
-      <header class="card-header bg-primary bg-opacity-10"> <!-- Estilo moderno -->
-        <h2 id="view-ticket-title" class="mb-0 h4">Consultar Tickets</h2> <!-- Hierarquia de heading adequada -->
+    <article class="card shadow-sm card-view-ticket"> 
+      <header class="card-header bg-primary bg-opacity-10">
+        <h2 id="view-ticket-title" class="mb-0 h4 fw-semibold text-uppercase">Consultar Tickets</h2>
       </header>
       <div class="card-body ">
-        <?php if(empty($tickets)): ?> <!-- Controle para lista vazia -->
+        <?php if(empty($tickets)): ?>
           <div class="alert alert-info mb-4">
             Nenhum ticket encontrado
           </div>
@@ -107,7 +107,6 @@ require_once __DIR__ . '/../scripts/access_validator.php';
             ?>
             <div class="row g-2 mb-3">
               <div class="col-12">
-                <!-- Card de chamado individual -->
                 <article class="card border-primary border-opacity-25">
                   <div class="card-body">
                     <h3 class="card-title fs-5 mb-1"><?=htmlspecialchars($ticket_data[1])?></h3>
@@ -124,9 +123,9 @@ require_once __DIR__ . '/../scripts/access_validator.php';
           <?php endforeach; ?>
         <?php endif; ?>
 
-        <div class="row mt-4 g-3"> <!-- Atualizado espaçamento -->
-          <div class="col-12 col-md-6"> <!-- Responsividade -->
-            <a href="home.php" class="btn btn-outline-secondary w-100 py-2"> <!-- Estilo moderno -->
+        <div class="row mt-4 g-3">
+          <div class="col-12 col-md-12"> 
+            <a href="home.php" class="btn btn-outline-secondary w-100 py-2">
               <i class="bi bi-arrow-left me-2"></i>Voltar
             </a>
           </div>
