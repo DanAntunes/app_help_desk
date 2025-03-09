@@ -61,7 +61,7 @@ require_once __DIR__ . '/../scripts/access_validator.php';
   <section aria-labelledby="menu-title">
     <article class="card card-menu">
       <header class="card-header">
-        <h2 id="menu-title" class="mb-0 text-center">Menu</h2>
+        <h2 id="menu-title" class="mb-0 text-center fw-semibold text-uppercase">Menu</h2>
       </header>
       <div class="card-body">
         <div class="row g-3">
