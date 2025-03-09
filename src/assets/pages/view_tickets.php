@@ -2,6 +2,37 @@
 require_once __DIR__ . '/../scripts/access_validator.php';
 ?>
 
+<?php
+
+  $tickets = array();
+
+  $file = fopen('../../assets/data-base/tickets.dat', 'r');
+
+  while(!feof($file)) { 
+
+    $data = fgets($file);
+
+    $data_details = explode('#', $data);
+
+    if($_SESSION['profile_id'] == 2) {
+
+      if($_SESSION['id'] != $data_details[0]) {
+        continue;
+
+      } else {
+        $tickets[] = $data; 
+      }
+
+    } else {
+      $tickets[] = $data;
+    }
+
+  }
+
+  fclose($file);
+
+  ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
