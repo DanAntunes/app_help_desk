@@ -1,14 +1,12 @@
 :root {
-  --primary-color: #fff;
-  /* --bg-modal-color: #191919; */
   --bg-color: #121212;
   --bg-header: #292929;
   --bg-footer: #1e1e1e ;
-  --bg-btn: #333;
-  --darkness-color: #111111;
-  --hover-color: #555;
-  --border-color: #444;
+  --shadow-color: #444;
   --text-color: #f1f1f1;
+  --bg-scrollbar: #1a1a1a ;
+  --bg-scrollbar-thumb: #333;
+  --scrollbar-thumb-hover: #444;
 
   --font-primary: 'IBM Plex Sans', sans-serif;
   --font-secondary: 'Roboto', sans-serif;
