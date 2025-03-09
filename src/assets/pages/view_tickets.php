@@ -90,11 +90,11 @@ require_once __DIR__ . '/../scripts/access_validator.php';
 <!-- Conteúdo principal -->
 <main class="container my-5">
   <section aria-labelledby="view-ticket-title">
-    <article class="card shadow-sm"> <!-- Adicionado shadow -->
+    <article class="card shadow-sm card-view-ticket"> <!-- Adicionado shadow -->
       <header class="card-header bg-primary bg-opacity-10"> <!-- Estilo moderno -->
         <h2 id="view-ticket-title" class="mb-0 h4">Consultar Tickets</h2> <!-- Hierarquia de heading adequada -->
       </header>
-      <div class="card-body">
+      <div class="card-body ">
         <?php if(empty($tickets)): ?> <!-- Controle para lista vazia -->
           <div class="alert alert-info mb-4">
             Nenhum ticket encontrado
