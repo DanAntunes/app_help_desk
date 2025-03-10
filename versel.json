@@ -1,15 +1,7 @@
 {
   "functions": {
-    "api/*.php": { "runtime": "vercel-php@0.7.3" }
-  },
-  "routes": [
-    { "src": "/create_ticket", "dest": "/api/create_ticket.php" },
-    { "src": "/home", "dest": "/api/home.php" },
-    { "src": "/view_tickets", "dest": "/api/view_tickets.php" },
-    { "src": "/access_validator", "dest": "/api/access_validator.php" },
-    { "src": "/create_ticket_processor", "dest": "/api/create_ticket_processor.php" },
-    { "src": "/logoff", "dest": "/api/logoff.php" },
-    { "src": "/validate_login", "dest": "/api/validate_login.php" },
-    { "src": "/", "dest": "/api/index.php" }
-  ]
+    "api/*.php": {
+      "runtime": "vercel-php@0.7.3"
+    }
+  }
 }
