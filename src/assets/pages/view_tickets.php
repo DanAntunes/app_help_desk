@@ -51,13 +51,13 @@ require_once __DIR__ . '/../scripts/access_validator.php';
   <meta name="robots" content="index, nofollow">
 
   <!-- Web Manifest e Configurações PWA -->
-  <link rel="manifest" href="../../../public/favicons/site.webmanifest">
+  <link rel="manifest" href="../../assets/images/favicons/site.webmanifest">
   <meta name="theme-color" content="#ffffff">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="../../../public/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../../../public/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../../public/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicons/favicon-16x16.png">
 
  <!-- Pré-carregamento de recursos críticos -->
   <link rel="preload" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css" as="style">
